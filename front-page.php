@@ -9,7 +9,7 @@
     <div class="container p-default">
         <div class="row">
             <h2 class="mb-5">Today's picks</h2>
-            <img src="img/image01.png" alt="">
+            <img src="/wp-content/themes/rrb/img/image01.png" alt="">
         </div>
         <div class="row align-items-center">
             <div class="my-3">
@@ -33,7 +33,7 @@
         <div class="row">
             <div class="col-12 col-lg-6 pb-5 border-bottom border-2" href="article.html">
                 <div class="row">
-                    <img src="img/image02.png" alt="" class="sm-img">
+                    <img src="/wp-content/themes/rrb/img/image02.png" alt="" class="sm-img">
                 </div>
                 <p class="text-center text-info border border-info rounded-pill mt-3 col-3">Ideas</p>
                 <p class="opacity-40">Lorenzo Hamers | Product designer</p>
@@ -45,7 +45,7 @@
             </div>
             <div class="col-12 col-md-6 pb-5 border-bottom border-2">
                 <div class="row">
-                    <img src="img/image03.png" alt="" class="sm-img">
+                    <img src="/wp-content/themes/rrb/img/image03.png" alt="" class="sm-img">
                 </div>
                 <p class="text-center text-info border border-info rounded-pill mt-3 col-3">Ideas</p>
                 <p class="opacity-40">Mathias Reding | Game Boost | 4 min read</p> 
@@ -61,7 +61,7 @@
             <div class="row">
                 <div class="col-12 col-md-6 pb-5">
                     <div class="row">
-                        <img src="img/image04.png" alt="" class="sm-img">
+                        <img src="/wp-content/themes/rrb/img/image04.png" alt="" class="sm-img">
                         <p class="text-center text-info border border-info rounded-pill mt-3 col-3">Ideas</p>
                         <div class="row">
                             <div class="width-340">
@@ -77,7 +77,7 @@
                 </div>
                 <div class="col-12 col-md-6 pb-5">
                     <div class="row">
-                        <img src="img/image05.png" alt="" class="sm-img">
+                        <img src="/wp-content/themes/rrb/img/image05.png" alt="" class="sm-img">
                         <p class="text-center text-info border border-info rounded-pill mt-3 col-3">Culture</p>
                         <div class="row">
                             <div class="width-340">
@@ -95,7 +95,7 @@
             <div class="row">
                 <div class="col-12 col-md-6 pb-5">
                     <div class="row">
-                        <img src="img/image06.png" alt="" class="sm-img">
+                        <img src="/wp-content/themes/rrb/img/image06.png" alt="" class="sm-img">
                         <p class="text-center text-info border border-info rounded-pill mt-3 col-3">Technology</p>
                         <div class="row">
                             <div class="width-340">
@@ -111,7 +111,7 @@
                 </div>
                 <div class="col-12 col-md-6 pb-5">
                     <div class="row">
-                        <img src="img/image07.png" alt="" class="sm-img">
+                        <img src="/wp-content/themes/rrb/img/image07.png" alt="" class="sm-img">
                         <p class="text-center text-info border border-info rounded-pill mt-3 col-3">Ideas</p>
                         <div class="row">
                             <div class="width-340">
@@ -129,7 +129,7 @@
             <div class="row">
                 <div class="col-12 col-md-6 pb-5">
                     <div class="row">
-                        <img src="img/image08.png" alt="" class="sm-img">
+                        <img src="/wp-content/themes/rrb/img/image08.png" alt="" class="sm-img">
                         <p class="text-center text-info border border-info rounded-pill mt-3 col-3">Ideas</p>
                         <div class="row">
                             <div class="width-340">
@@ -145,7 +145,7 @@
                 </div>
                 <div class="col-12 col-md-6 pb-5">
                     <div class="row">
-                        <img src="img/image09.png" alt="" class="sm-img">
+                        <img src="/wp-content/themes/rrb/img/image09.png" alt="" class="sm-img">
                         <p class="text-center text-info border border-info rounded-pill mt-3 col-3">Technology</p>
                         <div class="row">
                             <div class="width-340">

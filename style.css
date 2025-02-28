@@ -279,3 +279,10 @@ body{
 .p-contact{
     padding: auto auto auto auto;
 }
+
+
+
+.navbar-expand-lg .navbar-nav {
+    height: 300px;
+    background-color: black;
+}
