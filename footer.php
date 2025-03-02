@@ -6,8 +6,8 @@
                     </div>
                     <br>
                     <div class="row">
-                        <h1><a href="blog.html">Blogs</a></h1>
-                        <h1><a href="contact.html">Contact</a></h1>
+                        <h1><a href="#">Blogs</a></h1>
+                        <h1><a href="#">Contact</a></h1>
                         <h1>Quick Links</h1>
                     </div>
                 </div>
