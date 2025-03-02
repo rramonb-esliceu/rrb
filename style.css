@@ -283,6 +283,8 @@ body{
 
 
 .navbar-expand-lg .navbar-nav {
-    height: 300px;
-    background-color: black;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    text-decoration: none;
 }

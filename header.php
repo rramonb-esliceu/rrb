@@ -1,42 +1,97 @@
-<!DOCTYPE html>
-<html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Home</title>
-
-        <?php wp_head(); ?>
-    
-    </head>
-<body>
-    <header>
-        <nav class="bg-header epilogue font-nav-bar">
-            <div class="d-flex flex-row text-light">
-                <div class=""></div>
-                
-                <div class="menu-logo text-center pl-2 mx-5 py-3">Blogful</div>
-                <div class="d-flex flex-row">
-                <?php
-
-                wp_nav_menu(array(
-                    'menu' => 'primary',
-                    'theme_location' => 'primary',
-                    'container' => 'ul',
-                    'menu_class' => 'align-items-center justify-content-evenly w-100 navbar-nav m-auto mb-2 mb-lg-0',
-                    'add_li_class' => 'nav-item m-1',
-                    'link_class' => 'nav-link text-decoration-none nav-item',
-                ));
-                ?>
-                <!--
-                    <div class="menu-item text-center mt-3 ms-5 me-4"><a class="active" href="home.html">All</a></div>
-                    <div class="menu-item text-center mt-3 mx-4">Culture</div>
-                    <div class="menu-item text-center mt-3 mx-4">Ideas</div>
-                    <div class="menu-item text-center mt-3 mx-4">Technology</div>
-                    <div class="menu-item text-center mt-3 mx-4"><a href="blog.html">Blog</a></div>
-                    <div class="menu-item text-center mt-3 mx-4"><a href="contact.html">Contact</a></div>
-                    <svg class="menu-item text-center my-4 mx-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="22.03" height="24" stroke-width="2"> <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0"></path> <path d="M21 21l-6 -6"></path> </svg> 
+<?php get_header() ?>
+        <div class="container p-default">
+            <div class="row justify-content-center">
+                <div class="col-12 text-start">
+                    <h1 class="titulo">Today's picks</h1>
                 </div>
-                -->
+                <div class="col-12 text-center mt-5 ps-4 title-description">
+                    <img class="mt-4 mb-5 align-items-center img-fluid" src="/wp-content/themes/acv/img/cultura.png" alt="">
+                    <div class="text-start mt-4">
+                        <div class="row">
+                            <div class="col-2">
+                                <button class="btn btn-outline-info boton rounded-pill">culture</button>
+                            </div>
+                        </div>
+                        <div class="mt-3 texto-gris">
+                            <p>Stephen Leonardi | Software Engineer | 5 min read</p>
+                            <p>September 8 ,2022</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 text-left">
+                    <div class="titulo">
+                        <h3>Anima Introduces: Hotspots Hints</h3>
+                    </div>
+                    <div class="descripcion col-80">
+                        <p>Hotspot Hints Help Guide Users Navigate Through a Prototype, Anima allows designers to create prototypes</p>
+                    </div>
+                    <div>
+                        <p><a class="link-opacity-100 link-underline link-underline-opacity-25" href="#">Learn more</a></p>
+                    </div>
+                </div>
             </div>
-        </nav>
-    </header>
+        </div>
+        <section>
+    <div class="row">
+
+        <?php
+        if (have_posts()) {
+            global $wp_query;
+
+
+            the_posts_pagination(array(
+                'mid_size' => 2,
+                'prev_text' => __( 'Anterior', 'textdomain'),
+                'next_text' => __( 'Siguiente', 'textdomain'),
+            ));
+
+
+            while (have_posts()) {
+                the_post();
+        ?>
+
+                <div class="col-lg-6 mb-5">
+                    <picture class="thumbnail">
+                        <?php
+                        if (has_post_thumbnail()) {
+                            the_post_thumbnail('medium', array('class' => 'rounded w-100'));
+                        } else {
+                            echo '<p>Sense imatge en el post</p>';
+                        }
+                        ?>
+                    </picture>
+
+                    <a class="new-title" href="<?php the_permalink(); ?>">
+                        <p><?php echo the_title(); ?></p>
+                    </a>
+
+                    <p class="subtitle mb-sm-2">
+                        <?php the_excerpt(); ?>
+                    </p>
+                </div>
+
+        <?php
+            }
+
+        the_posts_pagination(array(
+            'mid_size' => 2,
+            'prev_text' => __( 'Anterior', 'textdomain'),
+            'next_text' => __( 'Siguiente', 'textdomain'),
+        ));
+
+
+        } else {
+            echo '<p>No hi ha posts disponibles</p>';
+        }
+        ?>
+
+    </div>
+</section>
+        <div class="text-center mx-auto p-default2">
+            
+            <div class="row">
+                <div class="col-2 mucho-margin">
+                    <button class="btn botongrande btn-primary boton mt-4 btn-lg showmore">SHOW MORE</button>
+                </div>
+            </div>
+<?php get_footer() ?>
