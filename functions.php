@@ -23,7 +23,7 @@ add_action('init', 'rrb_register_my_menu');
 function reading_time() {
     $content = get_post_field('post_content', get_the_ID());
     $word_count = str_word_count(strip_tags($content));
-    $reading_time = ceil($word_count / 200); // 200 palabras por minuto
+    $reading_time = ceil($word_count / 200);
 
     return $reading_time . ' min read';
 }
