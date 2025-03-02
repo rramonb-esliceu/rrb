@@ -1,6 +1,6 @@
 <?php get_header() ?>
-/*hola*/
-
+<section>
+    <div class="row">
         <?php
         if (have_posts()) {
             global $wp_query;
@@ -26,7 +26,7 @@
                     </picture>
 
                     <a class="new-title" href="<?php the_permalink(); ?>">
-                        <p><?php echo the_title(); ?></p>
+                        <p><?php the_title(); ?></p>
                     </a>
 
                     <p class="subtitle mb-sm-2">
@@ -35,7 +35,7 @@
                 </div>
         
         <?php
-        }
+            }
 
         the_posts_pagination(array(
             'mid_size' => 2,
@@ -45,7 +45,7 @@
 
 
         } else {
-            echo '<p>No hi ha posts disponibles</p>';
+            _e('No hi ha posts disponibles');
         }
         ?>
     </div>

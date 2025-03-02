@@ -7,7 +7,7 @@
 
         <?php wp_head(); ?>
     
-</head>
+    </head>
 <body>
     <header>
         <nav class="bg-header epilogue font-nav-bar">
